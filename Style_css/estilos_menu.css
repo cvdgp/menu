@@ -1,33 +1,77 @@
 
 body{
-	background: black;
+  background-image: url("fondo.jpg");
+  
+
 
 }
 article{
-	color: whitesmoke;
+	color: #3e4444;
 	margin:1em;
 }
-li, ol{
-
-	margin:0;
-	padding: 0;
-
+ol>li{
+	transition: 1s;
 }
+li, ol{
+}
+@import url('https://fonts.googleapis.com/css2? family = Oswald: wght @ 700 & display = swap');
 
+.logo{
+
+	display: flex;
+	align-items: center;
+	color: #3e4444;
+	font-family:'Oswald', sans-serif;
+	font-weight: bold;
+	background: #c1946ac9;
+	border-radius:50%;
+	width: 50px;
+	height: 50px;
+	padding: 0.5em;
+}
+li > a{
+	text-decoration: none;
+	color: #000;
+}
 nav{
-	background: grey;
+	background: #3e4444;
 	display: inline-flex;
+	align-items: flex-start;
 	width: 95%;
 	height: 50px;
 	position: relative;
+	margin: auto;
+	padding: 1em;
 }
 nav  li {
 	list-style: none;
-	background: green;
+	background: #405d27;
 }
+.foto_acceso{
+	display: flex;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 5px  #c1946ad6 solid;
+	margin: 0 auto;
+
+	}
+	.key{
+
+		display:flex;
+		margin: 1em auto	;
+		border: 4px #7464ae solid;
+		border-radius: 5px;
+		text-align: center;
+	}
 .menu{
 	border: 2px white solid;
 	float: left;
+	margin-left: 0.5em;
+	margin-top: 1em;
+}
+.sub-menu{
+	display: none;
 }
 .item-sub-menu{
 
@@ -37,7 +81,7 @@ nav  li {
 }
 .sub-menu-3{
 	float: right;
-	border: 2px yellow solid;
+	border: 2px rgb(54, 54, 20) solid;
 	position: absolute;	
 	/*left: 21.75em;
 	top: 5em;*/
@@ -45,52 +89,15 @@ nav  li {
 	margin-top: -1em;	
 	visibility: hidden;
 	}
+.menu:hover .sub-menu{
+	display:flex;
+	flex-direction: column;
+	-ms-flex-align:end;
+}
 
 .item-sub-menu:hover > ol{
 	visibility: visible;
 }
 ol>li:hover{
-	background: green;
-}
-@media (max-width: 600px) {
-
-	.menu{
-		font-size: 0.7em;
-	}
-	.item-sub-menu{
-		font-size: 0.6em;
-	}
-	nav>div{
-		font-size:0.8em;
-/*		margin-right: 0.5em;
-*/	}
-	.head_menu{
-		margin-left: 0px;
-		padding: 0.1em;
-	}
-	.sub-menu-3{
-		margin-left:10.2em ;
-		margin-top: -2em ;
-	}
-}
-
-@media (max-width: 400px) {
-
-	.menu{
-		font-size: 0.4em;
-		padding: 0px;
-	}
-	.item-sub-menu{
-		font-size: 0.4em;
-		padding: 0px;
-	}
-	nav>div{
-		font-size:0.5em;
-		margin-right: 0.2em;
-	}
-	.head_menu{
-		margin-left: 0px;
-		padding: 0.01em;
-	}
-
+	background: rgb(213, 223, 213);
 }
